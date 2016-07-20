@@ -1,0 +1,1 @@
+angular.module('MobiTel', ['ngRoute', 'home', 'discounts', 'shippingAndPayment', 'contacts', 'shops', 'laptops', 'phones', 'tablets']);
