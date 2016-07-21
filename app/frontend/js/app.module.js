@@ -1,1 +1,1 @@
-angular.module('MobiTel', ['ngRoute', 'home', 'discounts', 'shippingAndPayment', 'contacts', 'shops', 'laptops', 'phones', 'tablets']);
+angular.module('MobiTel', ['ngRoute', 'ngAnimate', 'ui.bootstrap', 'home', 'discounts', 'shippingAndPayment', 'contacts', 'shops', 'laptops', 'phones', 'tablets', 'about', 'bonuses', 'credits', 'master', 'guarantee', 'exchange', 'delivery', 'buyingOnline']);

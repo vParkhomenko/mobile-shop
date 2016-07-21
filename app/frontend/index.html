@@ -57,30 +57,31 @@
 </nav>
 
 <ng-view></ng-view>
+
 <footer>
     <div class="container">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-3">
                     <h4>MobiTel</h4>
-                    <p><a href="">О компании</a></p>
-                    <p><a href="">Магазины</a></p>
-                    <p><a href="">Акции</a></p>
-                    <p><a href="">Контакты</a></p>
+                    <p><a href="#/about">О компании</a></p>
+                    <p><a href="#/shops">Магазины</a></p>
+                    <p><a href="#/discounts">Акции</a></p>
+                    <p><a href="#/contacts">Контакты</a></p>
                 </div>
                 <div class="col-sm-3">
                     <h4>Сервисы</h4>
-                    <p><a href="">Бонусная программа</a></p>
-                    <p><a href="">Доставка</a></p>
-                    <p><a href="">Кредит</a></p>
-                    <p><a href="">Вызов мастера</a></p>
+                    <p><a href="#/bonuses">Бонусная программа</a></p>
+                    <p><a href="#/shipping-and-payment">Оплата и доставка</a></p>
+                    <p><a href="#/credits">Кредит</a></p>
+                    <p><a href="#/master">Вызов мастера</a></p>
                 </div>
                 <div class="col-sm-3">
                     <h4>Помощь</h4>
-                    <p><a href="">Гарантия на товар</a></p>
-                    <p><a href="">Обмен и возврат товара</a></p>
-                    <p><a href="">Доставка заказов</a></p>
-                    <p><a href="">Как покупать в интернет магазине</a></p>
+                    <p><a href="#/guarantee">Гарантия на товар</a></p>
+                    <p><a href="#/exchange">Обмен и возврат товара</a></p>
+                    <p><a href="#/delivery">Доставка заказов</a></p>
+                    <p><a href="#/buying-online">Как покупать в интернет магазине</a></p>
                 </div>
                 <div class="col-sm-3">
                     <h4>Телефон горячей линии</h4>
@@ -96,6 +97,8 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/angular.min.js"></script>
 <script src="js/angular-route.min.js"></script>
+<script src="js/angular-animate.min.js"></script>
+<script src="js/ui-bootstrap-tpls.min.js"></script>
 
 <script src="js/app.module.js"></script>
 <script src="js/app.config.js"></script>
@@ -123,6 +126,30 @@
 
 <script src="catalog/tablets/tablets.module.js"></script>
 <script src="catalog/tablets/tablets.components.js"></script>
+
+<script src="about/about.module.js"></script>
+<script src="about/about.components.js"></script>
+
+<script src="bonuses/bonuses.module.js"></script>
+<script src="bonuses/bonuses.components.js"></script>
+
+<script src="credits/credits.module.js"></script>
+<script src="credits/credits.components.js"></script>
+
+<script src="master/master.module.js"></script>
+<script src="master/master.components.js"></script>
+
+<script src="guarantee/guarantee.module.js"></script>
+<script src="guarantee/guarantee.components.js"></script>
+
+<script src="exchange/exchange.module.js"></script>
+<script src="exchange/exchange.components.js"></script>
+
+<script src="delivery/delivery.module.js"></script>
+<script src="delivery/delivery.components.js"></script>
+
+<script src="buying-online/buying-online.module.js"></script>
+<script src="buying-online/buying-online.components.js"></script>
 
 </body>
 </html>

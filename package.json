@@ -21,6 +21,7 @@
   "homepage": "https://github.com/vParkhomenko/mobile-shop#readme",
   "devDependencies": {
     "bower": "^1.7.9",
+    "browser-sync": "^2.13.0",
     "del": "^2.2.1",
     "gulp": "gulpjs/gulp#4.0"
   }

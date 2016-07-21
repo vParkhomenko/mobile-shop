@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var del = require('del');
+var browserSync = require('browser-sync').create();
 
 var buildDir = 'public/dist';
 
@@ -12,7 +13,9 @@ gulp.task('mainJS', function() {
         '../bower_components/jquery/dist/jquery.min.js',
         '../bower_components/bootstrap/dist/js/bootstrap.min.js',
         '../bower_components/angular/angular.min.js',
-        '../bower_components/angular-route/angular-route.min.js'
+        '../bower_components/angular-route/angular-route.min.js',
+        '../bower_components/angular-animate/angular-animate.min.js',
+        '../bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js'
     ])
         .pipe(gulp.dest('../' + buildDir + '/js'));
 });
@@ -77,18 +80,79 @@ gulp.task('catalog', function() {
         .pipe(gulp.dest('../' + buildDir + '/catalog'));
 });
 
-gulp.task('main', gulp.parallel('mainJS', 'mainCSS', 'mainFont', 'copyIndex', 'copyImg', 'copyCss', 'copyJs', 'discounts', 'shippingAndPayment', 'contacts', 'shops', 'catalog'));
+gulp.task('about', function() {
+    return gulp.src('frontend/about/**.**')
+        .pipe(gulp.dest('../' + buildDir + '/about'));
+});
+
+gulp.task('bonuses', function() {
+    return gulp.src('frontend/bonuses/**.**')
+        .pipe(gulp.dest('../' + buildDir + '/bonuses'));
+});
+
+gulp.task('credits', function() {
+    return gulp.src('frontend/credits/**.**')
+        .pipe(gulp.dest('../' + buildDir + '/credits'));
+});
+
+gulp.task('master', function() {
+    return gulp.src('frontend/master/**.**')
+        .pipe(gulp.dest('../' + buildDir + '/master'));
+});
+
+gulp.task('guarantee', function() {
+    return gulp.src('frontend/guarantee/**.**')
+        .pipe(gulp.dest('../' + buildDir + '/guarantee'));
+});
+
+gulp.task('exchange', function() {
+    return gulp.src('frontend/exchange/**.**')
+        .pipe(gulp.dest('../' + buildDir + '/exchange'));
+});
+
+gulp.task('delivery', function() {
+    return gulp.src('frontend/delivery/**.**')
+        .pipe(gulp.dest('../' + buildDir + '/delivery'));
+});
+
+gulp.task('buyingOnline', function() {
+    return gulp.src('frontend/buying-online/**.**')
+        .pipe(gulp.dest('../' + buildDir + '/buying-online'));
+});
+
+gulp.task('main', gulp.series('clean',
+                  gulp.parallel('mainJS', 'mainCSS', 'mainFont', 'copyIndex', 'copyImg', 'copyCss', 'copyJs', 'discounts', 'shippingAndPayment', 'contacts', 'shops', 'catalog', 'about', 'bonuses', 'credits', 'master', 'guarantee', 'exchange', 'delivery', 'buyingOnline'))
+);
 
 gulp.task('watch', function() {
     gulp.watch('frontend/**.**', gulp.series('copyIndex'));
     gulp.watch('frontend/css/**.**', gulp.series('copyCss'));
     gulp.watch('frontend/js/**.**', gulp.series('copyJs'));
+    gulp.watch('frontend/img/**.**', gulp.series('copyImg'));
     gulp.watch('frontend/home/**.**', gulp.series('home'));
     gulp.watch('frontend/discounts/**.**', gulp.series('discounts'));
     gulp.watch('frontend/shipping-and-payment/**.**', gulp.series('shippingAndPayment'));
     gulp.watch('frontend/contacts/**.**', gulp.series('contacts'));
     gulp.watch('frontend/shops/**.**', gulp.series('shops'));
     gulp.watch('frontend/catalog/**/**.**', gulp.series('catalog'));
+    gulp.watch('frontend/about/**.**', gulp.series('about'));
+    gulp.watch('frontend/bonuses/**.**', gulp.series('bonuses'));
+    gulp.watch('frontend/credits/**.**', gulp.series('credits'));
+    gulp.watch('frontend/master/**.**', gulp.series('master'));
+    gulp.watch('frontend/guarantee/**.**', gulp.series('guarantee'));
+    gulp.watch('frontend/exchange/**.**', gulp.series('exchange'));
+    gulp.watch('frontend/delivery/**.**', gulp.series('delivery'));
+    gulp.watch('frontend/buying-online/**.**', gulp.series('buyingOnline'));
 });
 
-gulp.task('default', gulp.series('main', 'watch'));
+gulp.task('serve', function() {
+    browserSync.init({
+        server: '../public/dist'
+    });
+
+    browserSync.watch('../public/dist/**/*.*').on('change', browserSync.reload);
+});
+
+gulp.task('default',
+    gulp.series('main', gulp.parallel('watch', 'serve'))
+);

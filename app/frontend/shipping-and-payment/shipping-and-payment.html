@@ -1,7 +1,58 @@
 <div class="container">
     <div class="container-fluid">
         <div class="row">
-            <h1>Здесь будет доставка и оплата</h1>
+
+            <uib-tabset active="active">
+                <uib-tab heading="{{tabs.shipping.title}}">
+                    <h4>{{tabs.shipping.h1}}</h4>
+                    <h4>{{tabs.shipping.h2}}</h4>
+                    <p>{{tabs.shipping.p1}}</p>
+                    <p>{{tabs.shipping.p2}}</p>
+                    <h4>{{tabs.shipping.h3}}</h4>
+                    <ul>
+                        <li>{{tabs.shipping.ul1.li1}}</li>
+                        <li>{{tabs.shipping.ul1.li2}}</li>
+                        <li>{{tabs.shipping.ul1.li3}}</li>
+                        <li>{{tabs.shipping.ul1.li4}}</li>
+                    </ul>
+                    <h4>{{tabs.shipping.h4}}</h4>
+                    <ul>
+                        <li>{{tabs.shipping.ul2.li1}}</li>
+                        <li>{{tabs.shipping.ul2.li2}}</li>
+                        <li>{{tabs.shipping.ul2.li3}}</li>
+                        <li>{{tabs.shipping.ul2.li4}}</li>
+                    </ul>
+                    <h4>{{tabs.shipping.h5}}</h4>
+                    <ul>
+                        <li>{{tabs.shipping.ul3.li1}}</li>
+                        <li>{{tabs.shipping.ul3.li2}}</li>
+                        <li>{{tabs.shipping.ul3.li3}}</li>
+                        <li>{{tabs.shipping.ul3.li4}}</li>
+                    </ul>
+                    <small>{{tabs.shipping.small1}}</small>
+                </uib-tab>
+
+                <uib-tab heading="{{tabs.payment.title}}">
+                    <h3>{{tabs.payment.h1}}</h3>
+                    <h4>{{tabs.payment.h2}}</h4>
+                    <ul>
+                        <li>{{tabs.payment.ul1.li1}}</li>
+                        <li>{{tabs.payment.ul1.li2}}</li>
+                    </ul>
+                    <h4>{{tabs.payment.h3}}</h4>
+                    <ul>
+                        <li>{{tabs.payment.ul2.li1}}</li>
+                        <li>{{tabs.payment.ul2.li2}}</li>
+                    </ul>
+                    <h4>{{tabs.payment.h4}}</h4>
+                    <ul>
+                        <li>{{tabs.payment.ul3.li1}}</li>
+                    </ul>
+                    <p>{{tabs.payment.p1}}</p>
+                    <p>{{tabs.payment.p2}}</p>
+                </uib-tab>
+            </uib-tabset>
+
         </div>
     </div>
 </div>
