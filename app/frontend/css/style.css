@@ -21,3 +21,8 @@ footer {
     border-top: none;
     margin-bottom: 15px;
 }
+.social {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
