@@ -1,0 +1,22 @@
+{
+  "age": 0,
+  "id": "Noutbuk_ASUS_X540LJ_X540LJ-XX002D-p217733",
+  "images": [
+    "img/laptops/asus-x540-0.jpg",
+    "img/laptops/asus-x540-1.jpg",
+    "img/laptops/asus-x540-2.jpg",
+    "img/laptops/asus-x540-3.jpg"
+  ],
+  "name": "НОУТБУК ASUS X540LJ (X540LJ-XX002D)",
+  "description": "Ноутбук ASUS X540LJ (X540LJ-XX002D) отлично подходит и для работы с офисными программами, и для запуска мультимедийных приложений. В его аппаратную конфигурацию входит процессор Intel с интегрированной графикой. Высокая процессорная мощность гарантирует быструю работу любых, даже самых ресурсоемких приложений.",
+  "manufacturer": "Asus",
+  "model": "C10103 Ultra 10” 8GB чорний",
+  "diagonal": "10.1'",
+  "screen": "1280 х 800",
+  "system": "Android 4.4",
+  "CPU": "SpreadTrum SC7731",
+  "cores": "4",
+  "sim": "2",
+  "battery": "5000 mAh",
+  "weight": "513"
+}

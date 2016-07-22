@@ -1,0 +1,68 @@
+<div class="container">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <img class="img-responsive phone" ng-src="{{laptop.images[0]}}"/>
+            </div>
+
+            <div class="col-md-8">
+                <h1>{{laptop.name}}</h1>
+                <p>{{laptop.description}}</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <ul class="phone-thumbs">
+                <li ng-repeat="img in laptop.images">
+                    <img class="img-responsive" ng-src="{{img}}" />
+                </li>
+            </ul>
+        </div>
+        <div class="row">
+            <div class="col-sm-8">
+                <table class="table">
+                    <tr>
+                        <td>Производитель</td>
+                        <td>{{laptop.manufacturer}}</td>
+                    </tr>
+                    <tr>
+                        <td>Модель</td>
+                        <td>{{laptop.model}}</td>
+                    </tr>
+                    <tr>
+                        <td>Диагональ дисплея</td>
+                        <td>{{laptop.diagonal}}</td>
+                    </tr>
+                    <tr>
+                        <td>Разрешение</td>
+                        <td>{{laptop.screen}}</td>
+                    </tr>
+                    <tr>
+                        <td>Операционная система</td>
+                        <td>{{laptop.system}}</td>
+                    </tr>
+                    <tr>
+                        <td>Процессор</td>
+                        <td>{{laptop.CPU}}</td>
+                    </tr>
+                    <tr>
+                        <td>Количество ядер процессора</td>
+                        <td>{{laptop.cores}}</td>
+                    </tr>
+                    <tr>
+                        <td>Количество SIM-карт</td>
+                        <td>{{laptop.sim}}</td>
+                    </tr>
+                    <tr>
+                        <td>Емкость батареи</td>
+                        <td>{{laptop.battery}}</td>
+                    </tr>
+                    <tr>
+                        <td>Вес (г)</td>
+                        <td>{{laptop.weight}}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

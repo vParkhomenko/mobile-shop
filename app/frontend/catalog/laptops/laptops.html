@@ -1,7 +1,28 @@
 <div class="container">
     <div class="container-fluid">
         <div class="row">
-            <h1>Здесь будут планшеты</h1>
+            <h4>Телефоны</h4>
+            <div class="col-sm-3">
+                <p>Фильтры</p>
+                <input ng-model="search.name" type="text" class="form-control" placeholder="Поиск...">
+                <label class="filter"><input type="checkbox"> bluetooth</label>
+            </div>
+
+            <div class="col-sm-9">
+                <div class="row">
+                    <div class="col-sm-4" ng-repeat="laptop in laptops | filter:search:name">
+                        <div class="thumbnail view-phone">
+                            <img class="img-responsive" ng-src="{{laptop.imageUrl}}" alt="...">
+                            <div class="caption">
+                                <p class="phone-name"><strong>{{laptop.name}}</strong></p>
+                                <p class="phone-snippet">{{laptop.snippet}}</p>
+                                <p><a href="#/catalog/laptops/{{laptop.id}}" class="btn btn-default" role="button">Детальнее</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </div>
 </div>
