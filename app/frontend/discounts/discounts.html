@@ -1,39 +1,16 @@
 <div class="container">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-6 col-md-4">
+            <div class="col-sm-6 col-md-4" ng-repeat="disc in discounts">
                 <div class="thumbnail">
-                    <img src="img/item1.jpg" alt="...">
+                    <img ng-src="{{disc.img}}" alt="...">
                     <div class="caption">
-                        <h3>Thumbnail label</h3>
-                        <p>...</p>
-                        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                        <h3>{{disc.label}}</h3>
+                        <p>{{disc.p}}</p>
+                        <p><a href="#" class="btn btn-default" role="button">Button</a></p>
                     </div>
                 </div>
             </div>
-
-            <div class="col-sm-6 col-md-4">
-                <div class="thumbnail">
-                    <img src="img/item2.jpg" alt="...">
-                    <div class="caption">
-                        <h3>Thumbnail label</h3>
-                        <p>...</p>
-                        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4">
-                <div class="thumbnail">
-                    <img src="img/item3.jpg" alt="...">
-                    <div class="caption">
-                        <h3>Thumbnail label</h3>
-                        <p>...</p>
-                        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </div>
 </div>

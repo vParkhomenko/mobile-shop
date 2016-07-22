@@ -1,0 +1,47 @@
+[
+    {
+        "age": 0, 
+        "id": "Planshet_Nomi_C10103_Ultra_10_8GB_chorniy_C10103-p213520",
+        "imageUrl": "img/tablets/nomi-0.jpg",
+        "name": "ПЛАНШЕТ NOMI C10103 ULTRA 10” 8GB ЧОРНИЙ (C10103)",
+        "snippet": "«Nomi» – международная команда инженеров, дизайнеров и маркетологов, поставившая перед собой цель – предложить покупателям из разных стран надежные, современные и доступные по цене гаджеты и аксессуары к ним."
+    }, 
+    {
+        "age": 1, 
+        "id": "Planshet_Bravis_NB75_3G_IPS_Black_NB75_3G_Black-p206732",
+        "imageUrl": "img/tablets/bravis-0.jpg",
+        "name": "ПЛАНШЕТ BRAVIS NB75 3G IPS BLACK (NB75 3G BLACK)",
+        "snippet": "Новый Bravis NB75 подчеркнет яркую индивидуальность своего владельца, подарит свежие эмоции и возможность ощутить мир интерактивного контента по-новому. Четырехъядерный процессор идеально подходит для многозадачности."
+    }, 
+    {
+        "age": 2, 
+        "carrier": "AT&T", 
+        "id": "Planshet_Lenovo_IdeaTab_2_A7-30DC_16GWH-UA_59444618-p198485",
+        "imageUrl": "img/tablets/lenovo-0.jpg",
+        "name": "ПЛАНШЕТ LENOVO TAB 2 A7-30DC 16GWH-UA (59444618)",
+        "snippet": "Планшеты Lenovo доступны по цене и отличаются многообразием вариантов дизайна и наборов возможностей. "
+    }, 
+    {
+        "age": 3, 
+        "id": "Planshet_ASUS_ZenPad_8_Z380C-1A043A-p199652",
+        "imageUrl": "img/tablets/asus-0.jpg",
+        "name": "ПЛАНШЕТ ASUS ZENPAD 8'' 16GB BLACK (Z380C-1A043A)",
+        "snippet": "Планшет ASUS ZenPad 10'' 16GB Black (Z380C-1A043A) - это стильный 8-дюймовый планшет для мобильных развлечений."
+    }, 
+    {
+        "age": 4, 
+        "carrier": "Cellular South", 
+        "id": "Planshet_Bravis_NB105_3G_IPS_Black_NB105_3G_Black-p206729",
+        "imageUrl": "img/tablets/bravis2-0.jpg",
+        "name": "ПЛАНШЕТ BRAVIS NB105 3G IPS BLACK (NB105 3G BLACK)",
+        "snippet": "Четырехъядерный процессор идеально подходит для многозадачности. Эффективные компоненты позволяют работать с ресурсоемкими приложениями, обеспечивают бесперебойный просмотр видео и отлично подходят для игр."
+    }, 
+    {
+        "age": 5, 
+        "carrier": "Dell", 
+        "id": "Planshet_CUBE_U33GT_Super_Edition_U27GT-Super_U33GT-p220041",
+        "imageUrl": "img/tablets/cube-0.jpg",
+        "name": "ПЛАНШЕТ CUBE U33GT SUPER EDITION (U27GT-SUPER) (U33GT)",
+        "snippet": "Планшет Cube U33GT является следующим логичным шагом в эволюции модельного ряда устройств широко известного производителя."
+    }
+]

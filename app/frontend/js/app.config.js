@@ -22,11 +22,20 @@ angular.
                     when('/catalog/laptops', {
                         template: '<laptops></laptops>'
                     }).
+                    when('/catalog/laptops/:laptopId', {
+                        template: '<laptop-detail></laptop-detail>'
+                    }).
                     when('/catalog/phones', {
                         template: '<phones></phones>'
                     }).
+                    when('/catalog/phones/:phoneId', {
+                        template: '<phone-detail></phone-detail>'
+                    }).
                     when('/catalog/tablets', {
                         template: '<tablets></tablets>'
+                    }).
+                    when('/catalog/tablets/:tabletId', {
+                        template: '<tablet-detail></tablet-detail>'
                     }).
                     when('/about', {
                         template: '<about></about>'
@@ -45,9 +54,6 @@ angular.
                     }).
                     when('/exchange', {
                         template: '<exchange></exchange>'
-                    }).
-                    when('/delivery', {
-                        template: '<delivery></delivery>'
                     }).
                     when('/buying-online', {
                         template: '<buying-online></buying-online>'

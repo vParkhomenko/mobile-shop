@@ -36,7 +36,7 @@ gulp.task('copyIndex', function() {
 });
 
 gulp.task('copyImg', function() {
-    return gulp.src('frontend/img/**.**')
+    return gulp.src('frontend/img/**/**.**')
         .pipe(gulp.dest('../' + buildDir + '/img'));
 });
 
@@ -110,25 +110,20 @@ gulp.task('exchange', function() {
         .pipe(gulp.dest('../' + buildDir + '/exchange'));
 });
 
-gulp.task('delivery', function() {
-    return gulp.src('frontend/delivery/**.**')
-        .pipe(gulp.dest('../' + buildDir + '/delivery'));
-});
-
 gulp.task('buyingOnline', function() {
     return gulp.src('frontend/buying-online/**.**')
         .pipe(gulp.dest('../' + buildDir + '/buying-online'));
 });
 
 gulp.task('main', gulp.series('clean',
-                  gulp.parallel('mainJS', 'mainCSS', 'mainFont', 'copyIndex', 'copyImg', 'copyCss', 'copyJs', 'discounts', 'shippingAndPayment', 'contacts', 'shops', 'catalog', 'about', 'bonuses', 'credits', 'master', 'guarantee', 'exchange', 'delivery', 'buyingOnline'))
+                  gulp.parallel('mainJS', 'mainCSS', 'mainFont', 'copyIndex', 'copyImg', 'copyCss', 'copyJs', 'discounts', 'shippingAndPayment', 'contacts', 'shops', 'catalog', 'about', 'bonuses', 'credits', 'master', 'guarantee', 'exchange', 'buyingOnline'))
 );
 
 gulp.task('watch', function() {
     gulp.watch('frontend/**.**', gulp.series('copyIndex'));
     gulp.watch('frontend/css/**.**', gulp.series('copyCss'));
     gulp.watch('frontend/js/**.**', gulp.series('copyJs'));
-    gulp.watch('frontend/img/**.**', gulp.series('copyImg'));
+    gulp.watch('frontend/img/**/**.**', gulp.series('copyImg'));
     gulp.watch('frontend/home/**.**', gulp.series('home'));
     gulp.watch('frontend/discounts/**.**', gulp.series('discounts'));
     gulp.watch('frontend/shipping-and-payment/**.**', gulp.series('shippingAndPayment'));
@@ -141,7 +136,6 @@ gulp.task('watch', function() {
     gulp.watch('frontend/master/**.**', gulp.series('master'));
     gulp.watch('frontend/guarantee/**.**', gulp.series('guarantee'));
     gulp.watch('frontend/exchange/**.**', gulp.series('exchange'));
-    gulp.watch('frontend/delivery/**.**', gulp.series('delivery'));
     gulp.watch('frontend/buying-online/**.**', gulp.series('buyingOnline'));
 });
 

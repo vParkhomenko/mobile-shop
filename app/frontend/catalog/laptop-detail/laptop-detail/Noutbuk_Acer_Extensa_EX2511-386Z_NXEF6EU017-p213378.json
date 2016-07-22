@@ -1,0 +1,22 @@
+{
+  "age": 0,
+  "id": "Noutbuk_Acer_Extensa_EX2511-386Z_NXEF6EU017-p213378",
+  "images": [
+    "img/laptops/acer-0.jpg",
+    "img/laptops/acer-1.jpg",
+    "img/laptops/acer-2.jpg",
+    "img/laptops/acer-3.jpg"
+  ],
+  "name": "НОУТБУК ACER EXTENSA EX2511-386Z (NX.EF6EU.017)",
+  "description": "Ноутбук Acer Extensa EX2511-386Z (NX.EF6EU.017) - передовые технологии в компактном корпусе. Ноутбук выполнен из высококачественных материалов в классическом деловом дизайне. Процессор Intel гарантирует достаточную скорость обработки файлов и улучшенную работу в многозадачном режиме. Помогают ему в этом интегрированный графический адаптер Intel HD и 4 Гб оперативной памяти.",
+  "manufacturer": "Acer",
+  "model": "C10103 Ultra 10” 8GB чорний",
+  "diagonal": "10.1'",
+  "screen": "1280 х 800",
+  "system": "Android 4.4",
+  "CPU": "SpreadTrum SC7731",
+  "cores": "4",
+  "sim": "2",
+  "battery": "5000 mAh",
+  "weight": "513"
+}

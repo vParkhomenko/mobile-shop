@@ -1,0 +1,22 @@
+{
+  "age": 0,
+  "id": "Noutbuk_ASUS_X555SJ_X555SJ-XO003D-p216658",
+  "images": [
+    "img/laptops/asus-x555-0.jpg",
+    "img/laptops/asus-x555-1.jpg",
+    "img/laptops/asus-x555-2.jpg",
+    "img/laptops/asus-x555-3.jpg"
+  ],
+  "name": "НОУТБУК ASUS X555SJ (X555SJ-XO003D)",
+  "description": "Ноутбук ASUS X555SJ (X555SJ-XO003D) отлично подходит и для работы с офисными программами, и для запуска мультимедийных приложений. В его аппаратную конфигурацию входят процессор Intel Core и видеокарта. Высокая процессорная мощность гарантирует быструю работу любых, даже самых ресурсоемких приложений.",
+  "manufacturer": "Asus",
+  "model": "C10103 Ultra 10” 8GB чорний",
+  "diagonal": "10.1'",
+  "screen": "1280 х 800",
+  "system": "Android 4.4",
+  "CPU": "SpreadTrum SC7731",
+  "cores": "4",
+  "sim": "2",
+  "battery": "5000 mAh",
+  "weight": "513"
+}

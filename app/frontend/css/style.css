@@ -26,3 +26,55 @@ footer {
     margin-right: 10px;
     margin-bottom: 15px;
 }
+.phone-name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.phone-snippet {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+.view-phone {
+    height: 350px;
+}
+.filter {
+    font-weight: 300;
+}
+
+.phones {
+    list-style: none;
+}
+.phones li {
+    clear: both;
+    height: 115px;
+    padding-top: 15px;
+}
+
+.thumb {
+    float: left;
+    height: 100px;
+    margin: -0.5em 1em 1.5em 0;
+    padding-bottom: 1em;
+    width: 100px;
+}
+.phone-thumbs {
+    list-style: none;
+    margin: 0;
+}
+
+.phone-thumbs img {
+    height: 100px;
+    padding: 1em;
+    width: 100px;
+}
+
+.phone-thumbs li {
+    background-color: white;
+    border: 1px solid black;
+    display: inline-block;
+    margin: 1em;
+}
+
