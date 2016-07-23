@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <div class="row">
             <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
-                <div uib-slide ng-repeat="slide in slides track by $index" index="$index">
+                <div uib-slide ng-repeat="slide in home.slides track by $index" index="$index">
                     <img class="img-responsive" ng-src="{{slide.image}}" style="margin:auto;">
                     <div class="carousel-caption">
                         <h4>Slide {{slide.title}}</h4>

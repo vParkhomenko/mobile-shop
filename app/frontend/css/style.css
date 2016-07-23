@@ -76,5 +76,18 @@ footer {
     border: 1px solid black;
     display: inline-block;
     margin: 1em;
+    cursor: pointer;
+}
+.discounts-label {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.discounts-p {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
 }
 

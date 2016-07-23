@@ -10,6 +10,9 @@ angular.
                      when('/discounts', {
                          template: '<discounts></discounts>'
                     }).
+                    when('/discounts/:discountId', {
+                        template: '<discount-detail></discount-detail>'
+                    }).
                     when('/shipping-and-payment', {
                         template: '<shipping-and-payment></shipping-and-payment>'
                     }).

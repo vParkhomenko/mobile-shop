@@ -5,9 +5,10 @@
                 <div class="thumbnail">
                     <img ng-src="{{disc.img}}" alt="...">
                     <div class="caption">
-                        <h3>{{disc.label}}</h3>
-                        <p>{{disc.p}}</p>
-                        <p><a href="#" class="btn btn-default" role="button">Button</a></p>
+                        <h3 class="discounts-label">{{disc.label}}</h3>
+                        <p class="text-danger">{{disc.valid}}</p>
+                        <p class="discounts-p">{{disc.p}}</p>
+                        <p><a href="#discounts/{{disc.id}}" class="btn btn-default" role="button">Button</a></p>
                     </div>
                 </div>
             </div>

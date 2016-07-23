@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-4">
-                <img class="img-responsive phone" ng-src="{{tablet.images[0]}}"/>
+                <img class="img-responsive phone" ng-src="{{mainImageUrl}}"/>
             </div>
 
             <div class="col-md-8">
@@ -14,7 +14,7 @@
         <div class="row">
             <ul class="phone-thumbs">
                 <li ng-repeat="img in tablet.images">
-                    <img class="img-responsive" ng-src="{{img}}" />
+                    <img class="img-responsive" ng-src="{{img}}" ng-click="setImage(img)"/>
                 </li>
             </ul>
         </div>

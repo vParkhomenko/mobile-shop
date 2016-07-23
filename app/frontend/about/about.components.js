@@ -1,12 +1,10 @@
 angular.module('about').component('about', {
     templateUrl: 'about/about.html',
-    controller: ['$scope', '$routeParams',
-        function AboutController($scope, $routeParams) {
-            $scope.about = {
-                'h1': 'Интернет-магазин бытовой техники и электроники MobiTel',
-                'img1': 'img/mobitel.jpg',
-                'p1': 'Компания MobiTel существует на украинском рынке уже более 10 лет и за это время успела получить звание одного из лучших магазинов современной техники. Все начиналось с небольших точек продаж, пока фирма не решила покорить мир интернет-торговли. С тех пор любой житель Украины может заказать оригинальную технику от мировых производителей с быстрой доставкой в свой город.'
-            }
+    controller: ['$scope', '$http', '$routeParams',
+        function AboutController($scope, $http, $routeParams) {
+            $http.get('about/about/about.json').then(function(response) {
+                $scope.about = response.data;
+            });
         }
     ]
 });
