@@ -24,5 +24,8 @@
     "browser-sync": "^2.13.0",
     "del": "^2.2.1",
     "gulp": "gulpjs/gulp#4.0"
+  },
+  "dependencies": {
+    "express-generator": "^4.13.4"
   }
 }

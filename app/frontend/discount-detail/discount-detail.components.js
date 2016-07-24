@@ -1,11 +1,8 @@
 angular.module('discountDetail').component('discountDetail', {
     templateUrl: 'discount-detail/discount-detail.html',
-    controller: ['$scope', '$http', '$routeParams',
-        function DiscountDetailController($scope, $http, $routeParams) {
-
-            $http.get('discount-detail/discount-detail/' + $routeParams.discountId + '.json').then(function(response) {
-                $scope.discount = response.data;
-            });
+    controller: ['$scope', 'Discount', '$routeParams',
+        function DiscountDetailController($scope, Discount, $routeParams) {
+            $scope.discount = Discount.get({discountId: $routeParams.discountId});
         }
     ]
 });
