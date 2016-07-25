@@ -1,0 +1,194 @@
+[
+  {
+    "_id": "5795e85ae6a859e020a0a44a",
+    "category": "laptops",
+    "age": 1,
+    "id": "Noutbuk_HP_250_N0Y18ES-p200006",
+    "imageUrl": "img/laptops/asus-x555-0.jpg",
+    "name": "НОУТБУК ASUS X555SJ (X555SJ-XO003D)",
+    "snippet": "Новый Bravis NB75 подчеркнет яркую индивидуальность своего владельца, подарит свежие эмоции и возможность ощутить мир интерактивного контента по-новому. Четырехъядерный процессор идеально подходит для многозадачности.",
+    "__v": 0,
+    "detail": {
+      "age": 0,
+      "id": "Noutbuk_ASUS_X555SJ_X555SJ-XO003D-p216658",
+      "name": "НОУТБУК ASUS X555SJ (X555SJ-XO003D)",
+      "description": "Ноутбук ASUS X555SJ (X555SJ-XO003D) отлично подходит и для работы с офисными программами, и для запуска мультимедийных приложений. В его аппаратную конфигурацию входят процессор Intel Core и видеокарта. Высокая процессорная мощность гарантирует быструю работу любых, даже самых ресурсоемких приложений.",
+      "manufacturer": "Asus",
+      "model": "C10103 Ultra 10” 8GB чорний",
+      "diagonal": "10.1'",
+      "screen": "1280 х 800",
+      "system": "Android 4.4",
+      "CPU": "SpreadTrum SC7731",
+      "cores": 4,
+      "sim": 2,
+      "battery": "5000 mAh",
+      "weight": 513,
+      "images": [
+        "img/laptops/asus-x555-0.jpg",
+        "img/laptops/asus-x555-1.jpg",
+        "img/laptops/asus-x555-2.jpg",
+        "img/laptops/asus-x555-3.jpg"
+      ]
+    }
+  },
+  {
+    "_id": "5795e89ce6a859e020a0a44b",
+    "category": "laptops",
+    "age": 2,
+    "id": "Noutbuk_Dell_Inspiron_3543_I35545DDL-46-p218122",
+    "imageUrl": "img/laptops/dell-3543-0.jpg",
+    "name": "НОУТБУК DELL INSPIRON 3543 (I35545DDL-46)",
+    "snippet": "Планшеты Lenovo доступны по цене и отличаются многообразием вариантов дизайна и наборов возможностей. ",
+    "__v": 0,
+    "detail": {
+      "age": 0,
+      "id": "Noutbuk_Dell_Inspiron_3543_I35545DDL-46-p218122",
+      "name": "НОУТБУК DELL INSPIRON 3543 (I35545DDL-46)",
+      "description": "Оцените универсальный 15-дюймовый ноутбук Dell Inspiron 3543, оснащенный развлекательными возможностями, которые обеспечивают великолепное качество воспроизведения мультимедийных материалов по доступной цене. Широкая поддержка мультимедийных возможностей. Надежная производительность: выполняйте ваши повседневные задачи — от поиска в Интернете до редактирования видео — с помощью процессора Intel. Встроенный дисковод DVD-дисков: записывайте любимые композиции, смотрите фильмы и загружайте программное обеспечение с помощью встроенного дисковода DVD-дисков. Хранение больших объемов данных на DVD-дисках для архивирования файлов и быстрый доступ к новым приложениям.",
+      "manufacturer": "Dell",
+      "model": "C10103 Ultra 10” 8GB чорний",
+      "diagonal": "10.1'",
+      "screen": "1280 х 800",
+      "system": "Android 4.4",
+      "CPU": "SpreadTrum SC7731",
+      "cores": 4,
+      "sim": 2,
+      "battery": "5000 mAh",
+      "weight": 513,
+      "images": [
+        "img/laptops/dell-3543-0.jpg",
+        "img/laptops/dell-3543-1.jpg",
+        "img/laptops/dell-3543-2.jpg",
+        "img/laptops/dell-3543-3.jpg"
+      ]
+    }
+  },
+  {
+    "_id": "5795e8e6e6a859e020a0a44c",
+    "category": "laptops",
+    "age": 3,
+    "id": "Noutbuk_Acer_Extensa_EX2511-386Z_NXEF6EU017-p213378",
+    "imageUrl": "img/laptops/acer-0.jpg",
+    "name": "НОУТБУК ACER EXTENSA EX2511-386Z (NX.EF6EU.017)",
+    "snippet": "Планшет ASUS ZenPad 10'' 16GB Black (Z380C-1A043A) - это стильный 8-дюймовый планшет для мобильных развлечений.",
+    "__v": 0,
+    "detail": {
+      "age": 0,
+      "id": "Noutbuk_Acer_Extensa_EX2511-386Z_NXEF6EU017-p213378",
+      "name": "НОУТБУК ACER EXTENSA EX2511-386Z (NX.EF6EU.017)",
+      "description": "Ноутбук Acer Extensa EX2511-386Z (NX.EF6EU.017) - передовые технологии в компактном корпусе. Ноутбук выполнен из высококачественных материалов в классическом деловом дизайне. Процессор Intel гарантирует достаточную скорость обработки файлов и улучшенную работу в многозадачном режиме. Помогают ему в этом интегрированный графический адаптер Intel HD и 4 Гб оперативной памяти.",
+      "manufacturer": "Acer",
+      "model": "C10103 Ultra 10” 8GB чорний",
+      "diagonal": "10.1'",
+      "screen": "1280 х 800",
+      "system": "Android 4.4",
+      "CPU": "SpreadTrum SC7731",
+      "cores": 4,
+      "sim": 2,
+      "battery": "5000 mAh",
+      "weight": 513,
+      "images": [
+        "img/laptops/acer-0.jpg",
+        "img/laptops/acer-1.jpg",
+        "img/laptops/acer-2.jpg",
+        "img/laptops/acer-3.jpg"
+      ]
+    }
+  },
+  {
+    "_id": "5795e932e6a859e020a0a44d",
+    "category": "laptops",
+    "age": 4,
+    "id": "Noutbuk_Lenovo_IdeaPad_100_80MJ0041UA-p209841",
+    "imageUrl": "img/laptops/lenovo-0.jpg",
+    "name": "НОУТБУК LENOVO IDEAPAD 100 (80MJ0041UA)",
+    "snippet": "Четырехъядерный процессор идеально подходит для многозадачности. Эффективные компоненты позволяют работать с ресурсоемкими приложениями, обеспечивают бесперебойный просмотр видео и отлично подходят для игр.",
+    "__v": 0,
+    "detail": {
+      "age": 0,
+      "id": "Noutbuk_Lenovo_IdeaPad_100_80MJ0041UA-p209841",
+      "name": "НОУТБУК LENOVO IDEAPAD 100 (80MJ0041UA)",
+      "description": "Все системы Lenovo соответствуют жестким требованиям стандартов надежности и проходят нагрузочные испытания для определения стойкости к внешним воздействиям. Кроме того, для некоторых моделей ноутбуков Lenovo поводится тестирование по восьми различным методикам, разработанным министерством обороны США. Эти тесты подтверждают устойчивость ноутбуков к воздействию экстремальных внешних факторов(высокие и низкие температуры, влажность, пыль и т. д.).",
+      "manufacturer": "Lenovo",
+      "model": "C10103 Ultra 10” 8GB чорний",
+      "diagonal": "10.1'",
+      "screen": "1280 х 800",
+      "system": "Android 4.4",
+      "CPU": "SpreadTrum SC7731",
+      "cores": 4,
+      "sim": 2,
+      "battery": "5000 mAh",
+      "weight": 513,
+      "images": [
+        "img/laptops/lenovo-0.jpg",
+        "img/laptops/lenovo-1.jpg",
+        "img/laptops/lenovo-2.jpg",
+        "img/laptops/lenovo-3.jpg"
+      ]
+    }
+  },
+  {
+    "_id": "5795e977e6a859e020a0a44e",
+    "category": "laptops",
+    "age": 5,
+    "id": "Noutbuk_ASUS_X540LJ_X540LJ-XX002D-p217733",
+    "imageUrl": "img/laptops/asus-x540-0.jpg",
+    "name": "НОУТБУК ASUS X540LJ (X540LJ-XX002D)",
+    "snippet": "Планшет Cube U33GT является следующим логичным шагом в эволюции модельного ряда устройств широко известного производителя.",
+    "__v": 0,
+    "detail": {
+      "age": 0,
+      "id": "Noutbuk_ASUS_X540LJ_X540LJ-XX002D-p217733",
+      "name": "НОУТБУК ASUS X540LJ (X540LJ-XX002D)",
+      "description": "Ноутбук ASUS X540LJ (X540LJ-XX002D) отлично подходит и для работы с офисными программами, и для запуска мультимедийных приложений. В его аппаратную конфигурацию входит процессор Intel с интегрированной графикой. Высокая процессорная мощность гарантирует быструю работу любых, даже самых ресурсоемких приложений.",
+      "manufacturer": "Asus",
+      "model": "C10103 Ultra 10” 8GB чорний",
+      "diagonal": "10.1'",
+      "screen": "1280 х 800",
+      "system": "Android 4.4",
+      "CPU": "SpreadTrum SC7731",
+      "cores": 4,
+      "sim": 2,
+      "battery": "5000 mAh",
+      "weight": 513,
+      "images": [
+        "img/laptops/asus-x540-0.jpg",
+        "img/laptops/asus-x540-1.jpg",
+        "img/laptops/asus-x540-2.jpg",
+        "img/laptops/asus-x540-3.jpg"
+      ]
+    }
+  },
+  {
+    "_id": "57960c7f48843a0c203efa95",
+    "category": "laptops",
+    "age": 0,
+    "id": "Noutbuk_HP_250_N0Y18ES-p200006",
+    "imageUrl": "img/laptops/hp250-0.jpg",
+    "name": "НОУТБУК HP 250 (N0Y18ES)",
+    "snippet": "«Nomi» – международная команда инженеров, дизайнеров и маркетологов, поставившая перед собой цель – предложить покупателям из разных стран надежные, современные и доступные по цене гаджеты и аксессуары к ним.",
+    "__v": 0,
+    "detail": {
+      "age": 0,
+      "id": "Noutbuk_HP_250_N0Y18ES-p200006",
+      "name": "НОУТБУК HP 250 (N0Y18ES)",
+      "description": "Ноутбук HP 250 (N0Y18ES) отличается выгодной ценой и позволяет всегда оставаться на связи. Ноутбук HP 250 — это отличное средство для решения любых задач. Он объединяет в себе новейшие технологии и необходимые инструменты для работы с мультимедиа. Прочный корпус ноутбука надежно защищает его от повреждений при переноске.",
+      "manufacturer": "HP",
+      "model": "C10103 Ultra 10” 8GB чорний",
+      "diagonal": "10.1'",
+      "screen": "1280 х 800",
+      "system": "Android 4.4",
+      "CPU": "SpreadTrum SC7731",
+      "cores": 4,
+      "sim": 2,
+      "battery": "5000 mAh",
+      "weight": 513,
+      "images": [
+        "img/laptops/hp250-0.jpg",
+        "img/laptops/hp250-1.jpg",
+        "img/laptops/hp250-2.jpg",
+        "img/laptops/hp250-3.jpg"
+      ]
+    }
+  }
+]

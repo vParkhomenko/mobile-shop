@@ -28,32 +28,21 @@ angular.module('MobiTel').
     ]).
     factory('Laptop', [
         '$resource', function($resource) {
-            return $resource('catalog/laptops/laptops/:laptopId.json', {}, {
+            return $resource('/api/:goods/:laptopId', {}, {
                 query: {
                     method: 'GET',
-                    params: {laptopId: 'laptops'},
+                    params: {laptopId: ''},
                     isArray: true
                 }
             });
         }
     ]).
-    factory('Phone', [
+    factory('LaptopDetail', [
         '$resource', function($resource) {
-            return $resource('catalog/phones/phones/:phoneId.json', {}, {
+            return $resource('/api/goods/:laptopId', {}, {
                 query: {
                     method: 'GET',
-                    params: {phoneId: 'phones'},
-                    isArray: true
-                }
-            });
-        }
-    ]).
-    factory('Tablet', [
-        '$resource', function($resource) {
-            return $resource('catalog/tablets/tablets/:tabletId.json', {}, {
-                query: {
-                    method: 'GET',
-                    params: {tabletId: 'tablets'},
+                    params: {laptopId: ''},
                     isArray: true
                 }
             });

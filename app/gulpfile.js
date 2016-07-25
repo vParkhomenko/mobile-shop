@@ -155,5 +155,5 @@ gulp.task('serve', function() {
 });
 
 gulp.task('default',
-    gulp.series('main', gulp.parallel('watch', 'serve'))
+    gulp.series('main', gulp.parallel('watch'))
 );

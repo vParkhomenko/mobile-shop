@@ -22,23 +22,11 @@ angular.
                     when('/shops', {
                         template: '<shops></shops>'
                     }).
-                    when('/catalog/laptops', {
+                    when('/catalog/:category', {
                         template: '<laptops></laptops>'
                     }).
-                    when('/catalog/laptops/:laptopId', {
+                    when('/catalog/:category/:product', {
                         template: '<laptop-detail></laptop-detail>'
-                    }).
-                    when('/catalog/phones', {
-                        template: '<phones></phones>'
-                    }).
-                    when('/catalog/phones/:phoneId', {
-                        template: '<phone-detail></phone-detail>'
-                    }).
-                    when('/catalog/tablets', {
-                        template: '<tablets></tablets>'
-                    }).
-                    when('/catalog/tablets/:tabletId', {
-                        template: '<tablet-detail></tablet-detail>'
                     }).
                     when('/about', {
                         template: '<about></about>'
