@@ -26,23 +26,36 @@ angular.module('MobiTel').
             });
         }
     ]).
-    factory('Laptop', [
+    factory('AllCategories', [
         '$resource', function($resource) {
-            return $resource('/api/:goods/:laptopId', {}, {
+            return $resource('/api', {
+                page: ''
+            }, {
+                query: { 
+                    method: 'GET'
+                }
+                
+            });
+        }
+    ]).
+    factory('Products', [
+        '$resource', function($resource) {
+            return $resource('/api/:goods/:product', {
+                page: ''
+            }, {
                 query: {
                     method: 'GET',
-                    params: {laptopId: ''},
-                    isArray: true
+                    params: {product: ''}
                 }
             });
         }
     ]).
-    factory('LaptopDetail', [
+    factory('ProductDetail', [
         '$resource', function($resource) {
-            return $resource('/api/goods/:laptopId', {}, {
+            return $resource('/api/goods/:product', {}, {
                 query: {
                     method: 'GET',
-                    params: {laptopId: ''},
+                    params: {product: ''},
                     isArray: true
                 }
             });

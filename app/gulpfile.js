@@ -5,7 +5,7 @@ var browserSync = require('browser-sync').create();
 var buildDir = 'public/dist';
 
 gulp.task('clean', function() {
-    return del(buildDir);
+    return del('./public/dist');
 });
 
 gulp.task('mainJS', function() {

@@ -3,19 +3,56 @@ var Product = require('../models/products').Product;
 var express = require('express');
 var router = express.Router();
 
-router.get('/api/:category', function(req, res) {
+router.get('/api', function(req, res) {
     
-    var category = req.params.category;
+    var totalItems = 1;
 
-    Product.find({category: category}, function (err, category) {
-        if (!err) {
-            return res.json(category);
-        } else {
-            res.statusCode = 500;
+    Product.count(function (err, count) {
+        if (err) return handleError(err);
+        totalItems = count;
+    });
 
-            return res.json({
-                error: 'Server error'
+    if(!req.query.page) {
+        var page = 1;
+    } else {
+        var page = req.query.page;
+    }
+    var per_page = 6;
+
+    Product.find('id').skip((page-1)*per_page).limit(per_page).exec(function(err, data) {
+        if (err) {
+            return res.status(400).send({
+                message: errorHandler.getErrorMessage(err)
             });
+        } else {
+            res.json({"data": data, "totalItems": totalItems, "per_page": per_page});
+        }
+    });
+});
+
+router.get('/api/:category', function(req, res) {
+    var category = req.params.category;
+    var totalItems = 1;
+   
+    Product.where('category', category).count(function (err, count) {
+        if (err) return handleError(err);
+        totalItems = count;
+    });
+    
+    if(!req.query.page) {
+        var page = 1;
+    } else {
+        var page = req.query.page;
+    }
+    var per_page = 6;
+
+    Product.find({category: category}).skip((page-1)*per_page).limit(per_page).exec(function(err, data) {
+        if (err) {
+            return res.status(400).send({
+                message: errorHandler.getErrorMessage(err)
+            });
+        } else {
+            res.json({"data": data, "totalItems": totalItems, "per_page": per_page});
         }
     });
 });
@@ -46,7 +83,18 @@ router.post('/api/:category', function(req, res) {
         imageUrl: req.body.imageUrl,
         name: req.body.name,
         snippet: req.body.snippet,
-        detail: req.body.detail
+        images: req.body.images,
+        description: req.body.description,
+        manufacturer: req.body.manufacturer,
+        model: req.body.model,
+        diagonal: req.body.diagonal,
+        screen: req.body.screen,
+        system: req.body.system,
+        CPU: req.body.CPU,
+        cores:  req.body.cores,
+        sim: req.body.sim,
+        battery: req.body.battery,
+        weight: req.body.weight
     });
 
     product.save(function (err) {
@@ -77,12 +125,23 @@ router.delete('/api/:category/:id', function(req, res) {
     });
 });
 
-router.put('/api/:category/:id', function(req, res) {
-    var product = req.params.id;
+router.put('/api/:category/:id', function (req, res){
 
-    Product.findOneAndUpdate({ id: product }, function (err) {
+    var query = {'id': req.params.id};
+    var newFields = req.body;
+
+    Product.findOneAndUpdate(query, newFields, {upsert:true}, function(err, doc){
+        if (err) return res.send(500, { error: err });
+        return res.send("succesfully saved");
+    });
+
+});
+
+router.delete('/api/delete', function(req, res) {
+
+    Product.remove('id', function (err) {
         if (err) return handleError(err);
-        res.json({success: "success", msg: "Product with id: " +  product + " - was updated!"});
+        res.json({success: "success", msg: "all - was deleted!"});
     });
 });
 
