@@ -4,6 +4,15 @@ angular.
             function config($locationProvider, $routeProvider) {
 
                 $routeProvider.
+                    when('/admin', {
+                        template: '<admin></admin>'
+                    }).
+                    when('/admin/add', {
+                        template: '<admin-add></admin-add>'
+                    }).
+                    when('/admin/edit/:product', {
+                        template: '<admin-edit></admin-edit>'
+                    }).
                     when('/home', {
                         template: '<home></home>'
                     }).

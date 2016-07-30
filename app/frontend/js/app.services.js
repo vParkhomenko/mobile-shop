@@ -1,4 +1,26 @@
 angular.module('MobiTel').
+    factory('Admin', [
+        '$resource', function($resource) {
+            return $resource('/api', {
+                page: ''
+            }, {
+                query: {
+                    method: 'GET'
+                }
+            });
+        }
+    ]).
+    factory('AdminEdit', [
+        '$resource', function($resource) {
+            return $resource('/api/goods/:product', {}, {
+                query: {
+                    method: 'GET',
+                    params: {product: ''},
+                    isArray: true
+                }
+            });
+        }
+    ]).
     factory('About', [
         '$resource', function($resource) {
             return $resource('about/about/about.json', {}, {

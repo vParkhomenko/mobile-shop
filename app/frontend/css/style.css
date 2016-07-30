@@ -90,4 +90,35 @@ footer {
     -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
 }
+.td-align {
+    text-align: center;
+}
+.remove-product {
+    background: transparent;
+    border: none;
+}
+.edit-input {
+    width: 50%;
+    margin-bottom: 10px;
+}
+.btn-send-edit {
+    margin: 30px 0;
+}
+.edit-input.ng-invalid {
+    border-color: red;
+    background: #efdada;
+}
+.admin-h4 {
+    line-height: 35px;
+}
+.admin-btn-add {
+    float: right;
+}
+.modal-btn {
+    float: right;
+}
+.modal-content,
+.modal-header {
+    border-radius: 3px;
+}
 

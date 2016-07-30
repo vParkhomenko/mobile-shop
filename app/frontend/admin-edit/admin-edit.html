@@ -1,0 +1,52 @@
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn btn-default btn-questionnaire modal-btn" data-dismiss="modal">Ok</button>
+                <h4 class="modal-title" id="myModalLabel"></h4>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="container-fluid">
+        <div class="row">
+            <h4>Редактировать {{editProduct.name}}</h4>
+            <form class="editingForm" name="editingForm">
+                <label for="imageUrl">Главное фото</label>
+                <input class="edit-input form-control" ng-model="editProduct.imageUrl" type="text" id="imageUrl" name="imageUrl" required>
+                <label for="name">Имя</label>
+                <input class="edit-input form-control" ng-model="editProduct.name"  type="text" id="name" name="name" required>
+                <label for="snippet">Сниппет</label>
+                <input class="edit-input form-control" ng-model="editProduct.snippet" type="text" id="snippet" name="snippet" required>
+                <label for="description">Описание</label>
+                <input class="edit-input form-control" ng-model="editProduct.description" type="text" id="description" name="description" required>
+                <label for="manufacturer">Производитель</label>
+                <input class="edit-input form-control" ng-model="editProduct.manufacturer" type="text" id="manufacturer" name="manufacturer" required>
+                <label for="model">Модель</label>
+                <input class="edit-input form-control" ng-model="editProduct.model" type="text" id="model" name="model" required>
+                <label for="diagonal">Диагональ дисплея</label>
+                <input class="edit-input form-control" ng-model="editProduct.diagonal" type="text" id="diagonal" name="diagonal" required>
+                <label for="screen">Разрешение</label>
+                <input class="edit-input form-control" ng-model="editProduct.screen" type="text" id="screen" name="screen" required>
+                <label for="system">Операционная система</label>
+                <input class="edit-input form-control" ng-model="editProduct.system" type="text" id="system" name="system" required>
+                <label for="CPU">Процессор</label>
+                <input class="edit-input form-control" ng-model="editProduct.CPU" type="text" id="CPU" name="CPU" required>
+                <label for="cores">Количество ядер процессора</label>
+                <input class="edit-input form-control" ng-model="editProduct.cores" type="text" id="cores" name="cores" required>
+                <label for="sim">Количество SIM-карт</label>
+                <input class="edit-input form-control" ng-model="editProduct.sim" type="text" id="sim" name="sim" required>
+                <label for="battery">Емкость батареи</label>
+                <input class="edit-input form-control" ng-model="editProduct.battery" type="text" id="battery" name="battery" required>
+                <label for="weight">Вес (г)</label>
+                <input class="edit-input form-control" ng-model="editProduct.weight" type="text" id="weight" name="weight" required>
+                <label for="images">Дополнительные Фото</label>
+                <input class="edit-input form-control" ng-model="editProduct.images" type="text" id="images" name="images" ng-list=", " required>
+                <button class="btn btn-send-edit btn-success" type="submit" ng-click="save(editProduct)">Отправить изменения</button>
+            </form>
+        </div>
+    </div>
+</div>

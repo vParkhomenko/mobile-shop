@@ -75,7 +75,7 @@ router.get('/api/:category/:product', function(req, res) {
 });
 
 router.post('/api/:category', function(req, res) {
-
+    
     var product = new Product({
         category: req.body.category,
         age: req.body.age,

@@ -121,8 +121,23 @@ gulp.task('buyingOnline', function() {
         .pipe(gulp.dest('../' + buildDir + '/buying-online'));
 });
 
+gulp.task('admin', function() {
+    return gulp.src('frontend/admin/**.**')
+        .pipe(gulp.dest('../' + buildDir + '/admin'));
+});
+
+gulp.task('adminEdit', function() {
+    return gulp.src('frontend/admin-edit/**.**')
+        .pipe(gulp.dest('../' + buildDir + '/admin-edit'));
+});
+
+gulp.task('adminAdd', function() {
+    return gulp.src('frontend/admin-add/**.**')
+        .pipe(gulp.dest('../' + buildDir + '/admin-add'));
+});
+
 gulp.task('main', gulp.series('clean',
-                  gulp.parallel('mainJS', 'mainCSS', 'mainFont', 'copyIndex', 'copyImg', 'home', 'copyCss', 'copyJs', 'discounts', 'discountDetail', 'shippingAndPayment', 'contacts', 'shops', 'catalog', 'about', 'bonuses', 'credits', 'master', 'guarantee', 'exchange', 'buyingOnline'))
+                  gulp.parallel('mainJS', 'mainCSS', 'mainFont', 'copyIndex', 'copyImg', 'admin', 'adminEdit', 'adminAdd', 'home', 'copyCss', 'copyJs', 'discounts', 'discountDetail', 'shippingAndPayment', 'contacts', 'shops', 'catalog', 'about', 'bonuses', 'credits', 'master', 'guarantee', 'exchange', 'buyingOnline'))
 );
 
 gulp.task('watch', function() {
@@ -144,6 +159,9 @@ gulp.task('watch', function() {
     gulp.watch('frontend/guarantee/**/**.**', gulp.series('guarantee'));
     gulp.watch('frontend/exchange/**/**.**', gulp.series('exchange'));
     gulp.watch('frontend/buying-online/**/**.**', gulp.series('buyingOnline'));
+    gulp.watch('frontend/admin/**.**', gulp.series('admin'));
+    gulp.watch('frontend/admin-edit/**.**', gulp.series('adminEdit'));
+    gulp.watch('frontend/admin-add/**.**', gulp.series('adminAdd'));
 });
 
 gulp.task('serve', function() {
