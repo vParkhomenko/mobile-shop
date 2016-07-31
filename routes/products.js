@@ -5,20 +5,20 @@ var router = express.Router();
 
 router.get('/api', function(req, res) {
     
-    var totalItems = 1;
-
-    Product.count(function (err, count) {
-        if (err) return handleError(err);
-        totalItems = count;
-    });
-
+    var totalItems;
+    var per_page = 6;
+    
     if(!req.query.page) {
         var page = 1;
     } else {
         var page = req.query.page;
     }
-    var per_page = 6;
-
+    
+    Product.count('id', function (err, count) {
+        if (err) return handleError(err);
+        totalItems = count;
+    });
+    
     Product.find('id').skip((page-1)*per_page).limit(per_page).exec(function(err, data) {
         if (err) {
             return res.status(400).send({
@@ -137,6 +137,7 @@ router.put('/api/:category/:id', function (req, res){
 
 });
 
+// УДАЛИТЬ ВСЕ!!!
 router.delete('/api/delete', function(req, res) {
 
     Product.remove('id', function (err) {

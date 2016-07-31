@@ -51,7 +51,7 @@ angular.module('MobiTel').
     factory('AllCategories', [
         '$resource', function($resource) {
             return $resource('/api', {
-                page: ''
+                page: 1
             }, {
                 query: { 
                     method: 'GET'
@@ -63,7 +63,7 @@ angular.module('MobiTel').
     factory('Products', [
         '$resource', function($resource) {
             return $resource('/api/:goods/:product', {
-                page: ''
+                page: 1
             }, {
                 query: {
                     method: 'GET',

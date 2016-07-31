@@ -1,4 +1,4 @@
-<div class="container" ng-init="getProducts()">
+<div class="container" ng-cloak>
     <div class="container-fluid">
         <div class="row">
             <h4>Панель администратора</h4>
@@ -26,7 +26,11 @@
                             <td class="td-align"><button  class="remove-product" ng-click="removeProduct(product)"><span class="glyphicon glyphicon-trash"></span></a></td>
                         </tr>
                     </table>
-                    <ul uib-pagination boundary-links="true" total-items="totalItems" items-per-page="per_page" ng-model="currentPage" ng-change="pageChanged()" class="pagination-sm" previous-text="&lsaquo;" next-text="&rsaquo;" first-text="&laquo;" last-text="&raquo;"></ul>
+                    <nav ng-show="pagesNum > 1">
+                        <ul class="pagination">
+                            <li ng-repeat="list in paginationList" ng-class="{'active': currentPage == list.name}"><a ng-class="{'disabled': $first && currentPage == 1 || $last && currentPage == pagesNum}" ng-bind-html="list.name" href="{{list.link}}"></a></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </div>

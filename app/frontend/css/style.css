@@ -121,4 +121,9 @@ footer {
 .modal-header {
     border-radius: 3px;
 }
+.pagination>li>a.disabled {
+    pointer-events: none;
+    color: #ddd;
+}
+
 
